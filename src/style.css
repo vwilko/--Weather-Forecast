@@ -21,6 +21,9 @@ li {
   line-height: 19px;
   margin: 0;
   padding: 0;
+}
+
+li:first-letter {
   text-transform: capitalize;
 }
 
@@ -33,6 +36,11 @@ small {
 
 #extras {
   text-align: center;
+}
+
+.description {
+  font-size: 70px;
+  color: brown;
 }
 
 .page-wrapper {
