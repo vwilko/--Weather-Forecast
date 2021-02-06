@@ -38,9 +38,8 @@ small {
   text-align: center;
 }
 
-.description {
-  font-size: 70px;
-  color: brown;
+#icon {
+  font-size: xx-large;
 }
 
 .page-wrapper {
@@ -52,7 +51,6 @@ small {
   border: 1px solid black;
   border-radius: 5px;
   background-image: url(https://popuppainting.com/wp-content/uploads/2018/08/blue-sky.jpg);
-  background-repeat: no-repeat;
   background-size: cover;
   background-size: 100%;
 }

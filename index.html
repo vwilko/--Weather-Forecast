@@ -18,43 +18,52 @@
 <div class="container">
     <div class="page-wrapper">
         <div class="weather-card">
-        <h1 id="city"></h1>  
-            <ul>
-            <li> Last updated at <span id="date"></span></li>
-            <li id="description">sunny</li>
-            </ul>
-            <div class = "row">
-                <div class = "col-md-6">
-                    <div class= "clearfix">
-                <img src ="#" alt="☀️" id="icon"
-                class="float-left"/>
-                <div class="float-left">
-                    <span id="temperature"></span>
-                    <span class="units">
+            <form id="search-form" class="mb-3"> 
+            <div class="row">
+            <div class="col-md-9">
+            <input type = "search" placeholder="Type a city" autocomplete="off" autofocus="on" class="form-control" id="city-input"/>
+            </div>
+                <div class="col-md-3">
+            <button type="submit" class="btn btn-warning">Search</button>
+                </div>
+            </div>
+            </form>
+                            
+                <h1 id="city"></h1>  
+                <ul>
+                <li> Last updated at <span id="date"></span></li>
+                <li id="description">sunny</li>
+                </ul>
+                     <div class = "row">
+                    <div class = "col-md-6">
+                        <div class= "clearfix">
+                        <img src ="#" alt="☀️" id="icon" class="float-left"/>
+                        <div class="float-left">
+                         <span id="temperature"></span>
+                        <span class="units">
                         <a href="#" id="centigradeLink">°C </a> |
-                        <a href="#" id="fahrenheitLink">°F</a>
-                    </span>
-                    <br>
-                    Feels Like:<span id="feels"> 27</span>ºC
-                </div>
-                </div>
+                        <a href="#" id="fahrenheitLink">°F</a>              
+                        </span>
+                        <br>
+                        Feels Like:<span id="feels"> 27</span>ºC
+                        </div>
                     </div>
-                    <div class="col-md-6">
-                    <ul>
-                    <li>☼Sunrise 05:00</li>
-                    <li>☾Sunset 19:00</li>
-                    </ul>
-                    </div>
-                        <div class="col-md-12" id="extras">
+                        </div>
+                        <div class="col-md-6">
                         <ul>
-                        <li> Humidity: <span id="humidity"></span>%</li>
-                        <li> Wind Speed: <span id="wind"></span>km/h</li>
+                        <li>☼Sunrise 05:00</li>
+                        <li>☾Sunset 19:00</li>
                         </ul>
                         </div>
-            </div>
+                            <div class="col-md-12" id="extras">
+                            <ul>
+                            <li> Humidity: <span id="humidity"></span>%</li>
+                            <li> Wind Speed: <span id="wind"></span>km/h</li>
+                            </ul>
+                            </div>
+                            </div>
         </div>
-    <small><a href="https://github.com/vwilko/--Weather-Forecast" target="_blank">Open-source code,</a> by Vicky
-        Wilkinson</small>
+    <small><a href="https://github.com/vwilko/--Weather-Forecast" target="_blank">Open-source code,</a> by Vicky Wilkinson</small>
     </div>
     <script src="src/app.js"></script>
 </div>
