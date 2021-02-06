@@ -1,9 +1,10 @@
 body {
   font-family: "Roboto", sans-serif;
+  color: aliceblue;
+  font-weight: 900;
 }
 
 h1 {
-  color: black;
   font-size: 50px;
   font-weight: 400;
   margin-bottom: 0;
@@ -17,11 +18,21 @@ ul {
 li {
   list-style: none;
   font-size: 16px;
-  font-weight: 100;
   line-height: 19px;
-  color: black;
   margin: 0;
   padding: 0;
+  text-transform: capitalize;
+}
+
+small {
+  color: black;
+}
+#temperature {
+  font-size: 60px;
+}
+
+#extras {
+  text-align: center;
 }
 
 .page-wrapper {
@@ -32,7 +43,7 @@ li {
   padding: 20px;
   border: 1px solid black;
   border-radius: 5px;
-  background-image: url(https://www.stockvault.net/data/2013/02/13/141855/preview16.jpg);
+  background-image: url(https://popuppainting.com/wp-content/uploads/2018/08/blue-sky.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-size: 100%;
