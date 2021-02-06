@@ -16,35 +16,42 @@
 </head>
 <body>
 <div class="container">
-    <div class="weather-card">
+    <div class="page-wrapper">
+        <div class="weather-card">
         <h1>Sutton</h1>  
-    <ul>
-    <li>Saturday 12:40</li>
-    <li>Sunny</li>
-    </ul>
-        <div class = "row">
-            <div class = "col-md-6">
-            <img src ="#" alt="☀️"/>
-            12ºC | ºF <br>
-            Feels Like: 27ºC
-            </div>
-                <div class="col-md-6">
-                <ul>
+            <ul>
+            <li>Saturday 12:40</li>
+            <li>Sunny</li>
+            </ul>
+            <div class = "row">
+                <div class = "col-md-6">
+                    <div class= "clearfix">
+                <img src ="#" alt="☀️"
+                class="float-left"/>
+                <div class="float-left">
+                12ºC | ºF <br>
+                Feels Like: 27ºC
+                </div>
+                </div>
+                    </div>
+                    <div class="col-md-6">
+                    <ul>
                     <li>☼Sunrise 05:00</li>
                     <li>☾Sunset 19:00</li>
-                </ul>
-                </div>
-                    <div class="col-md-12">
-                    <ul>
+                    </ul>
+                    </div>
+                        <div class="col-md-12">
+                        <ul>
                         <li> Humidity: 61% </li>
                         <li> Wind Speed: 3km/h</li>
                         <li> UV: 0</li>
-                    </ul>
-                    </div>
+                        </ul>
+                        </div>
+            </div>
         </div>
-    </div>
     <small><a href="https://github.com/vwilko/--Weather-Forecast" target="_blank">Open-source code,</a> by Vicky
         Wilkinson</small>
+    </div>
     <script src="src/app.js"></script>
 </div>
 </body>
