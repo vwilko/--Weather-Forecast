@@ -14,4 +14,20 @@ h1 {
   color: black;
   font-size: 50px;
   font-weight: 400;
+  margin-bottom: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 19px;
+  color: black;
+  margin: 0;
+  padding: 0;
 }
