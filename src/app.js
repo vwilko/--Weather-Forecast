@@ -35,8 +35,8 @@ function displayTemperature (response){
     let humidityElement = document.querySelector("#humidity");
     let windElement = document.querySelector("#wind");
     let feelsElement = document.querySelector("#feels");
-    let dateElement = document.querySelector("#date")
-    let iconElement = document.querySelector("#icon")
+    let dateElement = document.querySelector("#date");
+    let iconElement = document.querySelector("#icon");
     
     centigradeTemperature = response.data.main.temp;
     cityElement.innerHTML = response.data.name;
@@ -58,7 +58,7 @@ function displayForecast(response) {
 for (let index = 0; index < 5; index++) {
     forecast = response.data.list [index];
     forecastElement.innerHTML += `
-    <div class="col">
+    <div class="col-3">
     ${formatHours(forecast.dt * 1000)} <br />
     <img src="https://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png"/> <br />
     <strong>${Math.round(forecast.main.temp_max)}°</strong> 
@@ -128,3 +128,5 @@ let locationButton= document.querySelector("#locationButton");
 locationButton.addEventListener("click", getCurrentLocation);
 
 search ("New York");
+
+

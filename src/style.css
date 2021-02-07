@@ -35,12 +35,16 @@ small {
   top: -40px;
 }
 
+.temperature-image {
+  padding-top: 10px;
+}
+
 #extras {
   text-align: center;
 }
 
 .page-wrapper {
-  max-width: 560px;
+  max-width: 800px;
   margin: 30px auto;
 }
 .weather-card {
