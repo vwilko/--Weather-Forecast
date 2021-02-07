@@ -38,12 +38,12 @@ function displayTemperature (response){
     let dateElement = document.querySelector("#date")
     let iconElement = document.querySelector("#icon")
     
-
+    centigradeTemperature = response.data.main.temp;
     cityElement.innerHTML = response.data.name;
-    temperatureElement.innerHTML = Math.round(response.data.main.temp)
+    temperatureElement.innerHTML = Math.round(centigradeTemperature);
     descriptionElement.innerHTML = response.data.weather[0].description;
     humidityElement.innerHTML = response.data.main.humidity;
-    windElement.innerHTML = response.data.wind.speed;
+    windElement.innerHTML = Math.round(response.data.wind.speed);
     feelsElement.innerHTML = Math.round(response.data.main.feels_like);
     dateElement.innerHTML = formatDate(response.data.dt * 1000);
     iconElement.setAttribute ("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
@@ -56,14 +56,37 @@ let cityInputElement = document.querySelector("#city-input");
 console.log(cityInputElement);
 }
 
-
 let apiKey = "99c6c9b126b6c2748213ca0867d33cb6";
-let city = "London"
+let city = "Tokyo"
 let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 axios.get(apiUrl).then(displayTemperature);
 
 
+function displayFahrenheitTemperature(event) {
+    event.preventDefault();
+    centigradeLink.classList.remove("active");
+    fahrenheitLink.classList.add("active");
+    let fahrenheitTemperature = (centigradeTemperature * 9) / 5 + 32;
+    let temperatureElement = document.querySelector ("#temperature");
+    temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
+}
+
+function displayCentigradeTemperature(event) {
+    event.preventDefault();
+    centigradeLink.classList.add("active");
+    fahrenheitLink.classList.remove("active");
+    let temperatureElement = document.querySelector ("#temperature");
+    temperatureElement.innerHTML = Math.round(centigradeTemperature);
+}
+
+let centigradeTemperature = null;
+
 let form = document.querySelector("#search-form");
 form.addEventListener("sumbit", search);
 
+let fahrenheitLink = document.querySelector("#fahrenheitLink");
+fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
+
+let centigradeLink = document.querySelector("#centigradeLink");
+centigradeLink.addEventListener("click", displayCentigradeTemperature);
 
