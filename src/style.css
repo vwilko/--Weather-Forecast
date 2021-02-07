@@ -17,7 +17,6 @@ ul {
 
 li {
   list-style: none;
-  font-size: 16px;
   line-height: 19px;
   margin: 0;
   padding: 0;
@@ -35,16 +34,31 @@ small {
   top: -40px;
 }
 
-.temperature-image {
-  padding-top: 10px;
+#overview {
+  padding-top: 30px;
+}
+
+#description {
+  font-size: 20px;
 }
 
 #extras {
   text-align: center;
+  padding-top: 30px;
+  font-size: 14px;
+}
+
+.feels-like {
+  line-height: 45px;
+  font-size: large;
+}
+.temperature-image {
+  padding-top: 10px;
 }
 
 .page-wrapper {
-  max-width: 800px;
+  max-width: 700px;
+  max-height: 100px;
   margin: 30px auto;
 }
 .weather-card {
