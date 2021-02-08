@@ -2,6 +2,7 @@ body {
   font-family: "Roboto", sans-serif;
   color: aliceblue;
   font-weight: 900;
+  text-align: center;
 }
 
 h1 {
@@ -26,17 +27,25 @@ li:first-letter {
   text-transform: capitalize;
 }
 
-small {
+#tag {
   color: black;
+  text-align: left;
+  font-size: 8px;
 }
 
+#forecast-text {
+  text-align: right;
+}
 #temperature {
   font-size: 80px;
   top: -40px;
+  text-align: left;
 }
 
 #overview {
   padding-top: 30px;
+  text-align: right;
+  padding-right: 45px;
 }
 
 #description {
@@ -45,7 +54,7 @@ small {
 
 #extras {
   text-align: center;
-  padding-top: 30px;
+  padding: 30px;
   font-size: 14px;
 }
 
@@ -76,7 +85,7 @@ small {
   border-radius: 5px;
   background-image: url(https://popuppainting.com/wp-content/uploads/2018/08/blue-sky.jpg);
   background-size: cover;
-  background-size: 100%;
+  background-size: 150%;
 }
 
 .temperature-image .units {
