@@ -40,6 +40,7 @@ li:first-letter {
   font-size: 80px;
   top: -40px;
   text-align: left;
+  margin-left: 30px;
 }
 
 #overview {
@@ -54,12 +55,8 @@ li:first-letter {
 
 #extras {
   text-align: center;
-  padding: 30px;
+  padding: 10px;
   font-size: 14px;
-}
-
-.links {
-  color: black;
 }
 
 .feels-like {
@@ -75,10 +72,6 @@ li:first-letter {
   margin: 30px auto;
 }
 
-.temperature-image :link {
-  text-decoration: none;
-}
-
 .weather-card {
   padding: 20px;
   border: 1px solid black;
@@ -88,19 +81,19 @@ li:first-letter {
   background-size: 150%;
 }
 
-.temperature-image .units {
+.units {
   position: relative;
   top: -50px;
   font-size: 12px;
 }
 
-.temperature-image .active {
-  color: white;
+.units .active {
+  color: aliceblue;
   font-weight: 900;
   font-size: 20px;
   text-decoration: none;
 }
 
-.temperature-image .active:hover {
+.units .active:hover {
   cursor: default;
 }
