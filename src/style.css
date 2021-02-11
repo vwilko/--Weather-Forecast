@@ -1,13 +1,13 @@
 body {
   font-family: "Roboto", sans-serif;
   color: aliceblue;
-  font-weight: 900;
   text-align: center;
+  transition: all 30s ease-out;
 }
 
 h1 {
   font-size: 50px;
-  font-weight: 400;
+  font-weight: bolder;
   margin-bottom: 0;
 }
 
@@ -23,30 +23,23 @@ li {
   padding: 0;
 }
 
-li:first-letter {
-  text-transform: capitalize;
-}
-
 #tag {
   color: black;
   text-align: left;
   font-size: 8px;
 }
 
-#forecast-text {
-  text-align: right;
-}
 #temperature {
-  font-size: 80px;
+  font-size: 75px;
   top: -40px;
   text-align: left;
-  margin-left: 30px;
 }
 
 #overview {
   padding-top: 30px;
+  padding-right: 30px;
   text-align: right;
-  padding-right: 45px;
+  text-transform: capitalize;
 }
 
 #description {
@@ -56,12 +49,25 @@ li:first-letter {
 #extras {
   text-align: center;
   padding: 10px;
-  font-size: 14px;
+  font-size: 16px;
+}
+
+#forecast {
+  text-align: center;
+  font-size: 16px;
+}
+
+.lastUpdate {
+  text-align: center;
+}
+
+.city {
+  font-weight: bold;
 }
 
 .feels-like {
   line-height: 45px;
-  font-size: large;
+  font-size: 16px;
 }
 .temperature-image {
   padding-top: 10px;
@@ -74,17 +80,18 @@ li:first-letter {
 
 .weather-card {
   padding: 20px;
-  border: 1px solid black;
+  border: 1px solid #ffca2b;
   border-radius: 5px;
   background-image: url(https://popuppainting.com/wp-content/uploads/2018/08/blue-sky.jpg);
   background-size: cover;
-  background-size: 150%;
+  background-size: 180%;
 }
 
 .units {
   position: relative;
-  top: -50px;
+  top: 19px;
   font-size: 12px;
+  text-align: left;
 }
 
 .units .active {
