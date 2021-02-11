@@ -23,6 +23,9 @@ li {
   padding: 0;
 }
 
+strong {
+  font-weight: 1500px;
+}
 #tag {
   color: black;
   text-align: left;
